@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+    /* background-color: hsl(0, 0%, 100%); */
+    /* background-color: ; */
+}
+
+
+img {
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+    color:  hsl(233, 26%, 24%);
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/*******************************
+        Generic Classes  
+*******************************/
+
+.hidden {
+    display: none;
+}
+
+.nav-menu ul .no-margin-bottom {
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* Styling layout */
+
+.nav-container {
+    display: flex;
+    padding: 1.2rem 1.3rem;
+    background-color: hotpink;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 8.5rem;
+    vertical-align: middle;
+}
+
+
+
+/* Navigation menu */
+
+.nav-menu {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    top: 5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    border-radius: 5px;
+    justify-content: center;
+    box-shadow: 2px 2px 100px rgb(56, 55, 55);
+    display: none;
+}
+
+
+.nav-menu ul{
+    padding: 2rem;
+    text-align: center;
+}
+
+.nav-menu ul li {
+    margin-bottom: 1.7rem;
+}
+
+.nav-menu ul li a{ 
+    letter-spacing: 1px;
+}
+
+/* Hamburger icon */
+
+.hamburger-icon {
+    width: 1.5rem;
+}   
+
+
+
+
+/* introduction section */
+
+.intro-content {
+    /* background-image: url('../images/bg-intro-mobile.svg');
+    background-position: top left; */
+    position: relative;
+    overflow: hidden;
+}
+
+
+.intro-mockups:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    /* top: -50%; */
+    background-image: url('../images/bg-intro-mobile.svg');
+    z-index: -1;
+    background-repeat: no-repeat;
+}
