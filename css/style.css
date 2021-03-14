@@ -50,8 +50,9 @@ li {
 .nav-container {
     display: flex;
     padding: 1.2rem 1.3rem;
-    background-color: hotpink;
+    background-color: white;
     justify-content: space-between;
+    z-index: 100;
 }
 
 .logo img {
@@ -102,20 +103,32 @@ li {
 /* introduction section */
 
 .intro-content {
-    /* background-image: url('../images/bg-intro-mobile.svg');
-    background-position: top left; */
     position: relative;
     overflow: hidden;
 }
 
+.mockup-section {
+    height: 300px;
+}
 
-.intro-mockups:before {
-    position: absolute;
-    content: '';
-    height: 100%;
+.mockup-background img {
+    display: block;
     width: 100%;
-    /* top: -50%; */
-    background-image: url('../images/bg-intro-mobile.svg');
+    position: relative;
+    top: -50px;
     z-index: -1;
-    background-repeat: no-repeat;
+}
+
+.intro-mockups {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-mockups img {
+    display:block;
+    width: 95%;
+    margin: 0 auto;
+    position: absolute;
+    top: -48px;
+    z-index: -1;
 }
