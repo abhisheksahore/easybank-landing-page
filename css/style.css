@@ -11,6 +11,7 @@ body {
     font-family: 'Public Sans', sans-serif;
     /* background-color: hsl(0, 0%, 100%); */
     /* background-color: ; */
+    
 }
 
 
@@ -77,10 +78,21 @@ li {
     top: 5rem;
     left: 1.5rem;
     right: 1.5rem;
+    transform: translateX(110%);
     border-radius: 5px;
     justify-content: center;
     box-shadow: 2px 2px 100px rgb(56, 55, 55);
     display: none;
+    transition: .5s;
+    opacity: -100%;
+}
+
+
+.nav-menu-open {
+    width: auto;
+    display: flex;
+    transform: translateX(0%);
+    opacity: 100%;
 }
 
 
@@ -103,7 +115,23 @@ li {
     width: 1.5rem;
 }   
 
+.hamburger-open {
+    display: none;
+}
 
+
+.close-nav-menu {
+    display: none;
+}
+
+.close-nav-menu-icon {
+    vertical-align: middle;
+    width: 1rem;
+}
+
+.open-nav-menu {
+    display: inline-block;
+}
 
 
 /* introduction section */
@@ -181,6 +209,8 @@ li {
 
 
 
+
+/* choose bank */
 
 .choose-bank-section {
     padding: 5rem 1.2rem 2rem 1.2rem;
@@ -353,4 +383,117 @@ footer {
     font-size: .9rem;
     font-weight: 300;
     color: rgba(255, 255, 255, .5);
+}
+
+
+
+
+
+/* 350 */
+
+@media (min-width: 350px) {
+    .mockup-background img  {
+        top: -100px;
+    }
+    .intro-mockups img {
+        top: -95px;
+    }
+    .mockup-section {
+        height: 300px;;
+    }
+}
+
+
+
+/* 375 */
+
+@media (min-width: 375px) {
+    .intro-content {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+    .choose-bank-section {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+    .intro-content-text { 
+        margin-bottom: 3rem;
+    }
+    .latest-articles {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .mockup-background img  {
+        top: -100px;
+    }
+    .intro-mockups img {
+        top: -95px;
+    }
+    .mockup-section {
+        height: 350px;
+    }
+}
+
+
+@media (min-width:436px) {
+    .mockup-background img  {
+        top: -60px;
+    }
+    .intro-mockups img {
+        top: -86px;
+    }
+    .mockup-section {
+        height: 400px;
+    }   
+}
+
+
+
+@media (min-width: 475px) {
+    .mockup-section {
+        height: 450px;
+    }   
+    .intro-content {
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    .choose-bank-section {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+    .latest-articles {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+
+
+@media (min-width: 520px) {
+    .mockup-background img  {
+        top: -140px;
+    }
+    .intro-mockups img {
+        top: -168px;
+    }
+    .mockup-section {
+        height: 450px;
+    } 
+    
+    .intro-content {
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    .choose-bank-section {
+        padding-right: 7rem;
+        padding-left: 7rem;
+    }
+    .latest-articles {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (min-width: 580px) {
+    
 }
