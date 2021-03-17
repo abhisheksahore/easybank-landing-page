@@ -458,7 +458,17 @@ footer {
 
 
 
+.author {
+    font-size: .9rem;
+    text-align: center;
+    padding: .2rem;
+}
 
+.author span {
+    background-color: black;
+    color: white;
+    padding: 0.1rem;
+}
 
 /* 350 */
 
